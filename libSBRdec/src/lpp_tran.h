@@ -2,7 +2,7 @@
 /* -----------------------------------------------------------------------------------------------------------
 Software License for The Fraunhofer FDK AAC Codec Library for Android
 
-© Copyright  1995 - 2013 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V.
+© Copyright  1995 - 2023 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V.
   All rights reserved.
 
  1.    INTRODUCTION
@@ -175,7 +175,7 @@ typedef struct {
   UCHAR  lbStopPatching;              /*!< first band that won't be patched anymore*/
   UCHAR  bwBorders[MAX_NUM_NOISE_VALUES]; /*!< spectral bands with different inverse filtering levels */
 
-  PATCH_PARAM    patchParam[MAX_NUM_PATCHES]; /*!< new parameter set for patching */
+  PATCH_PARAM    patchParam[MAX_NUM_PATCHES + 1]; /*!< new parameter set for patching */
   WHITENING_FACTORS whFactors;                /*!< the pole moving factors for certain whitening levels as indicated
                                                    in the bitstream depending on the crossover frequency */
   UCHAR  overlap;                             /*!< Overlap size */
